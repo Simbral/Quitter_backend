@@ -6,6 +6,8 @@ import jwt
 import datetime
 from functools import wraps
 
+print("API Working")
+
 def token_required(f):
     @wraps(f)
     def decorated(*args, **kwargs):
